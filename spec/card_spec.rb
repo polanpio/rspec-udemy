@@ -8,14 +8,17 @@ class Card
 end
 
 RSpec.describe Card do
-   #specify == it
+  #before do
+  before(:example) do
+    @card = Card.new('Ace', 'Spades')
+  end
+
+  #specify == it
   it 'has a rank' do
-    card = Card.new('Ace', 'Spades')
-    expect(card.rank).to eq('Ace')
+    expect(@card.rank).to eq('Ace')
   end
 
   it 'has a suit' do
-    card = Card.new('Ace', 'Spades')
-    expect(card.suit).to eq('Spades')
+    expect(@card.suit).to eq('Spades')
   end
 end
