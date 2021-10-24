@@ -1,4 +1,5 @@
 RSpec.describe '#even? method' do
+  #context can be used instead of describe here
   describe 'with even number' do
     it 'should return true' do
       expect(4.even?).to eq(true)
