@@ -1,0 +1,1 @@
+RSpec.shared_context
