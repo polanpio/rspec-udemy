@@ -20,4 +20,17 @@ RSpec.describe 'equality matchers' do
       expect(b).to eql(3)
     end
   end
+
+  describe 'egl and be matcher' do
+    let(:c) { [1, 2, 3] }
+    let(:d) { [1, 2, 3] }
+    let(:e) { c }
+
+    it 'cares about object idenitity' do
+      expect(c).to eq(d)
+      expect(c).to eql(d)
+
+      expect(c).to equal(e)
+    end
+  end
 end
