@@ -12,4 +12,13 @@ RSpec.describe 'comparison matchers' do
     it { is_expected.to be < 500 }
     it { is_expected.to be <= 100 }
   end
+
+  describe 45 do
+    it { is_expected.to be == 45 }
+    it { is_expected.to be >= 45 }
+    it { is_expected.to be < 70 }
+    it { is_expected.to be <= 45 }
+    it { is_expected.to be > 44 }
+    it { is_expected.not_to be == 56 }
+  end
 end
