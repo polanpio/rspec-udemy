@@ -21,5 +21,6 @@ RSpec.describe 'comparison matchers' do
     it { is_expected.to be > 44 }
     it { is_expected.not_to be == 56 }
     it { is_expected.not_to be == 100 }
+    it { is_expected.not_to be == 60 }
   end
 end
