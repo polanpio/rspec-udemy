@@ -6,6 +6,7 @@ RSpec.describe 'be matchers' do
     expect(0).to be_truthy
     expect([1, 4]).to be_truthy
     expect(:symbol).to be_truthy
+    expect(34 + 56).to be_truthy
   end
 
   it 'can test for falsiness' do
