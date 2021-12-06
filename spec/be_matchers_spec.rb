@@ -8,6 +8,7 @@ RSpec.describe 'be matchers' do
     expect(:symbol).to be_truthy
     expect(34 + 56).to be_truthy
     expect("not truthy").to be_truthy
+    expect({technical: 'not good'}).to be_truthy
   end
 
   it 'can test for falsiness' do
