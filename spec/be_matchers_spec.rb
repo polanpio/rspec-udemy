@@ -10,6 +10,7 @@ RSpec.describe 'be matchers' do
     expect("not truthy").to be_truthy
     expect({technical: 'not good'}).to be_truthy
     expect({technical: 'or was it good', next: "hays"}).to be_truthy
+    expect(235).to be_truthy
   end
 
   it 'can test for falsiness' do
